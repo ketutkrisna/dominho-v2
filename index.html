@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DOMINHO</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+      .mychip{
+
+      }
+      .bonus{
+        padding:1px 3px 1px 3px;
+        font-weight:bold;
+        color:white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+        border-radius: 0px 10px 0px 10px;
+      }
+      .boxchip{
+        padding:1px 5px 1px 5px;
+        background-color:#eee;
+        border-radius: 10px 0px 10px 0px;
+        font-weight: bold;
+        color: #616161;
+        box-shadow:2px 2px 3px rgba(0,0,0,.3)
+        /*margin-left:5px;*/
+      }
+      .takebonus{
+        padding: 2px 10px 2px 10px;
+        border-radius: 10px 10px 0 0;
+        background-color:lightblue;
+        width:78%;
+        text-align:center;
+        font-weight:bold;
+        color:#616161;
+      }
+      .boxbonus{
+        /*margin-right:5px;*/
+      }
+      /*.popupbox{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-color:rgba(0,0,0,.2);
+        margin:auto;
+        z-index:98;
+      }*/
+      .popupwin{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        border-radius:10px;
+        width: 350px;
+        height:250px;
+        /*background-color:rgba(0,0,0,.7);*/
+        margin:auto;
+        z-index:99;
+      }
+      .popuprange{
+        position:absolute;
+        height:50px;
+        width: 60%;
+        left:0;
+        right:0;
+        margin:-20px auto;
+        border-radius:10px 10px 0 0;
+        text-align: center;
+        color:yellow;
+        font-size:30px;
+        font-weight:bold;
+        z-index: 100;
+        /*font-family: 'Anton', sans-serif;*/
+        letter-spacing:1px;
+        line-height:33px;
+      }
+      .headpopup{
+        position:absolute;
+        height:50px;
+        width: 50%;
+        /*background-color:rgba(0,0,0,.7);*/
+        left:0;
+        right:0;
+        margin:-50px auto;
+        border-radius:10px 10px 0 0;
+      }
+      .win{
+        font-size:55px;
+        text-shadow:1px 7px 3px rgba(0,0,0,.7);
+      }
+      .oktext{
+        font-size:45px;
+        text-shadow:1px 5px 2px rgba(0,0,0,.7);
+      }
+      .winchip{
+        position:absolute;
+        left:0;
+        right:0;
+        height: 70px;
+        width:90%;
+        margin:70px auto;
+        background-color: rgba(0,0,0,.8);
+        border:3px solid orange;
+        border-radius:35px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:35px;
+        font-weight:bold;
+        color:orange;
+      }
+      .popupbox{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgba(0,0,0,.5);
+        z-index: 97;
+        display: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <div class="row">
+      <div class="col-12">
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="boxchip d-flex">
+              <div>CHIP : </div>
+              <div class="mychip"></div>
+            </div>
+            <div class="boxbonus">
+              <div></div>
+              <button class="btn btn-primary btn-sm text-light bonus2m">BONUS 2M</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center mt-2">
+            <div class="takebonus">Semoga Beruntung</div>
+          </div>
+        </div>
+
+        <div class="popupbox">
+        <div class="popupwin">
+          <div class="headpopup"><img src="img/api.gif" width="180"></div>
+          <div class="popuprange"><span class="oktext"></span><br><span class="win">WIN</span></div>
+          <div class="winchip"></div>
+        </div>
+        </div>
+
+        <!-- display -->
+        <div class="display">
+          <div class="slot">
+            <div class="value">
+              <div class="hasil1"><img src="img/g8.gif" width="90%" height="90%"></div>
+              <div><img src="img/g3.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g4.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+              <div><img src="img/g8.gif" width="90%" height="90%"></div>
+              <div><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g5.gif" width="90%" height="90%"></div>
+              <div><img src="img/g3.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g7.gif" width="90%" height="90%"></div>
+              <div><img src="img/g8.gif" width="90%" height="90%"></div>
+            </div>
+          </div>
+          <div class="slot">
+            <div class="value">
+              <div class="hasil2"><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g5.gif" width="90%" height="90%"></div>
+              <div><img src="img/g3.gif" width="90%" height="90%"></div>
+              <div><img src="img/g7.gif" width="90%" height="90%"></div>
+              <div><img src="img/g4.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g8.gif" width="90%" height="90%"></div>
+              <div><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+              <div><img src="img/g3.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g7.gif" width="90%" height="90%"></div>
+            </div>
+          </div>
+          <div class="slot">
+            <div class="value">
+              <div class="hasil3"><img src="img/g3.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g5.gif" width="90%" height="90%"></div>
+              <div><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g8.gif" width="90%" height="90%"></div>
+              <div><img src="img/g7.gif" width="90%" height="90%"></div>
+              <div><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g4.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+              <div><img src="img/g6.gif" width="90%" height="90%"></div>
+              <div><img src="img/g8.gif" width="90%" height="90%"></div>
+              <div><img src="img/g1.gif" width="90%" height="90%"></div>
+              <div><img src="img/g2.gif" width="90%" height="90%"></div>
+            </div>
+          </div>
+        </div>
+        <!-- tutup display -->
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <!-- buka div -->
+            <div>
+              <div id="bet" class="d-flex mt-3">
+                <span class="d-flex justify-content-center align-items-center" style="font-size:17px;background-color:#ddd;height:38px;padding:3px 5px 3px 5px;color:#616161;border-radius:5px 0 0 5px;font-weight:bold;box-shadow:1px 4px 3px rgba(0,0,0,.4);">Bet</span>
+                <select class="form-select-sm changebet" aria-label=".form-select-sm example" style="height:38px;border-radius:0 5px 5px 0;top:-15px;font-weight:bold;color:#616161;border:1px solid #eee;box-shadow:1px 4px 3px rgba(0,0,0,.4);">
+                  <option class="options" value="100000">100.000</option>
+                  <option class="options" value="300000">300.000</option>
+                  <option class="options" value="1000000">1.000.000</option>
+                  <option class="options" value="3000000">3.000.000</option>
+                  <option class="options" value="5000000">5.000.000</option>
+                  <option class="options" value="10000000">10.000.000</option>
+                  <option class="options" value="15000000">15.000.000</option>
+                  <option class="options" value="20000000">20.000.000</option>
+                </select>
+              </div>
+            </div>
+            <!-- tutup div -->
+            <!-- buka div -->
+            <div>
+              <div class="btn-group mt-3" id="starts">
+                <button type="button" class="btn text-white dropdown-toggle dropdown-toggle-split disablebtn" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:5px 0 0 5px;width:20px;padding:0;box-shadow:1px 4px 3px rgba(0,0,0,.4);background-color:#06d151;">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <button class="btn ps-0 pe-0 fw-bold text-white" id="startspin" style="color:#616161;border-radius:0 5px 5px 0;width:70px;text-shadow:1px 1px 3px rgba(0,0,0,.6);box-shadow:1px 4px 3px rgba(0,0,0,.4);background-color:#06d151;">SPIN</button>
+                <ul class="dropdown-menu p-0 m-0" style="box-shadow:3px 3px 4px rgba(0,0,0,.3);border-radius:10px;max-width:50px;">
+                  <li><a  style="border-radius:10px 10px 0 0;" class="dropdown-item spinotomatis" href="#!" data-spinotomatis="10">10</a></li>
+                  <li><a class="dropdown-item spinotomatis" href="#!" data-spinotomatis="100">100</a></li>
+                  <li><a class="dropdown-item spinotomatis" href="#!" data-spinotomatis="500">500</a></li>
+                  <li><a  style="border-radius:0px 0px 10px 10px;font-weight:bold;"class="dropdown-item spinotomatis" href="#!" data-spinotomatis="unlimited"> &#8734;</a></li>
+                </ul>
+              </div>
+              <div class="btn-group mt-3" id="tunggus" style="display:none;">
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split disablebtn" style="border-radius:5px 0 0 5px;width:20px;padding:0;" id="btndropdown">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <button class="btn btn-secondary ps-0 pe-0 fw-bold" style="color:#fff;border-radius:0 5px 5px 0;width:70px;" id="tungguspin">STOP</button>
+              </div>
+              <div class="btn-group mt-3" id="stops" style="display:none;">
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split disablebtn" style="border-radius:5px 0 0 5px;width:20px;padding:0;box-shadow:1px 4px 3px rgba(0,0,0,.4);" id="btndropdownstop">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <button class="btn btn-danger ps-0 pe-0 fw-bold" style="color:#fff;border-radius:0 5px 5px 0;width:70px;text-shadow:1px 1px 3px rgba(0,0,0,.6);box-shadow:1px 4px 3px rgba(0,0,0,.4);" id="stopspin">STOP</button>
+              </div>
+            </div>
+            <!-- tutup div -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <!-- musik -->
+    <audio id="csfff">
+      <source src="audio/csfff.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="reelstop">
+      <source src="audio/reelstop.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="spinawal">
+      <source src="audio/btnspin.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="btnstop">
+      <source src="audio/btnstop.mp3" type="audio/mpeg">
+    </audio>
+    <!-- tutup musik -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/myscript.js"></script>
+
+  </body>
+</html>
