@@ -128,6 +128,7 @@ $(function(){
 	function spinaja(datacount,datajumlah){
 		otomatis=true;
 		// jumlahspin = $(this).data('spinotomatis');
+		// console.log(datajumlah);
 		jumlahspin=datajumlah;
 		$('.changebet').attr('disabled','on');
 		$('.disablebtn').attr('disabled','on');
