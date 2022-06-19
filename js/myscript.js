@@ -277,9 +277,9 @@ $(function(){
            	}
 		}, 2000);
 		setTimeout(function() {
-			$('.slot:nth-child(1) .value').css('background-color','lightblue');
-			$('.slot:nth-child(2) .value').css('background-color','lightblue');
-			$('.slot:nth-child(3) .value').css('background-color','lightblue');
+			$('.slot:nth-child(1) .value').css('background-color','#04e0dd');
+			$('.slot:nth-child(2) .value').css('background-color','#04e0dd');
+			$('.slot:nth-child(3) .value').css('background-color','#04e0dd');
 		}, 300);
 
 		if(rand1 == rand2 && rand1 == rand3 && rand2 == rand3){
