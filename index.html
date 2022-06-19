@@ -99,7 +99,7 @@
         text-shadow:1px 7px 3px rgba(0,0,0,.7);
       }
       .oktext{
-        font-size:45px;
+        font-size:55px;
         text-shadow:1px 5px 2px rgba(0,0,0,.7);
       }
       .winchip{
@@ -109,7 +109,7 @@
         height: 70px;
         width:90%;
         margin:70px auto;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0,0,0,.6);
         border:3px solid orange;
         border-radius:35px;
         text-align:center;
@@ -122,6 +122,7 @@
       }
       .popupbox{
         position:absolute;
+        height:100vh;
         top:0;
         left:0;
         right:0;
@@ -140,6 +141,14 @@
       .bonus2m{
         box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -7px 5px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 3px 5px, rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
         font-weight: bold;
+      }
+      .jakpot{
+        position: absolute;
+        left:0;
+        right:0;
+        margin:-40px auto;
+        color:salmon;
+        text-shadow:0px 4px 3px rgba(0,0,0,.7);
       }
     </style>
   </head>
@@ -171,8 +180,8 @@
         <div class="popupbox">
         <div class="popupwin">
           <div class="headpopup"><img src="img/api.gif" width="180"></div>
-          <div class="popuprange"><span class="oktext"></span><br><span class="win">WIN</span></div>
-          <div class="winchip"></div>
+          <div class="popuprange"><span class="jakpot"></span><span class="oktext">BIG</span><br><span class="win">WIN</span></div>
+          <div class="winchip values" akhir="0"></div>
         </div>
         </div>
 
@@ -253,10 +262,10 @@
             <!-- buka div -->
             <div>
               <div class="btn-group mt-3" id="starts">
-                <button type="button" class="btn text-white dropdown-toggle dropdown-toggle-split disablebtn" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:5px 0 0 5px;width:20px;padding:0;box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -7px 5px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 3px 5px, rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.1) 0px 3px 6px;background-color:#06d151;">
+                <button type="button" class="btn text-white dropdown-toggle dropdown-toggle-split disablebtn" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:5px 0 0 5px;width:20px;height:38px;padding:0;box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -7px 5px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 3px 5px, rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.1) 0px 3px 6px;background-color:#06d151;">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <button class="btn ps-0 pe-0 fw-bold text-white" id="startspin" style="color:#616161;border-radius:0 5px 5px 0;width:70px;text-shadow:1px 1px 3px rgba(0,0,0,.6);box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -7px 5px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 3px 5px, rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.1) 0px 3px 6px;background-color:#06d151;">SPIN</button>
+                <button class="btn ps-0 pe-0 fw-bold text-white" id="startspin" style="color:#616161;border-radius:0 5px 5px 0;width:70px;height:38px;text-shadow:1px 1px 3px rgba(0,0,0,.6);box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -7px 5px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 3px 5px, rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.1) 0px 3px 6px;background-color:#06d151;">SPIN</button>
                 <ul class="dropdown-menu p-0 m-0" style="background-color:#fff;border-radius:10px;max-width:50px;">
                   <li><a  style="border-radius:10px 10px 0 0;box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -3px 3px 0px inset, rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(0, 0, 0, 0.3) 0px 3px 2px, rgba(0, 0, 0, 0.1) 0px 2px 3px, rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 2px 3px;font-weight:bold;" class="dropdown-item spinotomatis" href="#!" data-spinotomatis="10">10</a></li>
                   <li><a style="box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 6px 0px inset, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset, rgba(0, 0, 0, 0.3) 0px -3px 3px 0px inset, rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(0, 0, 0, 0.3) 0px 3px 2px, rgba(0, 0, 0, 0.1) 0px 2px 3px, rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 2px 3px;font-weight:bold;" class="dropdown-item spinotomatis" href="#!" data-spinotomatis="100">100</a></li>
