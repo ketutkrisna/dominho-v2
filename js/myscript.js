@@ -42,17 +42,17 @@ $(function(){
 	// 	'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="2" src="img/item/j.png">',
 	// 	'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="30" src="img/item/bocilping.png">'
 	// ];
-	var dataimages=['<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="5" src="img/item/k.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="19" src="img/item/kakekbiru.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="9" src="img/item/petasan.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="13" src="img/item/kendang.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="17" src="img/item/bocilijo.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="7" src="img/item/koin.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="3" src="img/item/q.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="11" src="img/item/liontin.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="1" src="img/item/j.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="15" src="img/item/bocilping.png">',
-		'<img class="ambiltambahchip" width="90%" height="90%" data-tambahchip="21" src="img/item/kakekmerah.png">'
+	var dataimages=['<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="5" src="img/item/k.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="19" src="img/item/kakekbiru.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="9" src="img/item/petasan.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="13" src="img/item/kendang.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="17" src="img/item/bocilijo.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="7" src="img/item/koin.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="3" src="img/item/q.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="11" src="img/item/liontin.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="1" src="img/item/j.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="15" src="img/item/bocilping.png">',
+		'<img class="ambiltambahchip" width="100%" height="100%" data-tambahchip="21" src="img/item/kakekmerah.png">'
 	];
 	var spinawalstop=document.getElementById('spinawal');
 	var btnstop=document.getElementById('btnstop');
@@ -749,7 +749,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.jakpot').text('JAKPOT');
 					$('.oktext').text('BIG');
 					counterwin(betkaliitem);
@@ -774,7 +774,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.jakpot').text('JAKPOT');
 					$('.oktext').text('MEGA');
 					counterwin(betkaliitem);
@@ -799,7 +799,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.jakpot').text('JAKPOT');
 					$('.oktext').text('SUPER');
 					counterwin(betkaliitem);
@@ -853,7 +853,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('BIG');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
@@ -876,7 +876,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('MEGA');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
@@ -899,7 +899,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('SUPER');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
@@ -951,7 +951,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('BIG');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
@@ -974,7 +974,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('MEGA');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
@@ -997,7 +997,7 @@ $(function(){
 					// 		spinaja(spincount-1,jumlahspin);
 					// 	}, 3000);
 					// }
-					$('.popupbox').fadeIn();
+					$('.popupbox').show();
 					$('.oktext').text('SUPER');
 					counterwin(betkaliitem);
 					// $('.values').attr('akhir',betkaliitem);
