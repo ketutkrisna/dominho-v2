@@ -164,7 +164,7 @@ $(function(){
 		tunggus();
 		$('#startspin').click();
 		if(jumlahspin != 'unlimited'){
-			$('#tungguspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
+			$('#tungguspin').html('STOP');
 			$('#stopspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
 		}else{
 			$('#tungguspin').html('STOP <sup><span style="font-size:16px;color:lightblue;position:absolute;right:-13px;top:0;">&#8734;</span></sup>');
@@ -173,7 +173,7 @@ $(function(){
 		kedip1 = setTimeout(function() {
 			stops();
 			if(jumlahspin != 'unlimited'){
-				$('#tungguspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
+				$('#tungguspin').html('STOP');
 				$('#stopspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
 			}else{
 				$('#tungguspin').html('STOP <sup><span style="font-size:16px;color:lightblue;position:absolute;right:-13px;top:0;">&#8734;</span></sup>');
@@ -183,7 +183,7 @@ $(function(){
 		kedipawal= setTimeout(function() {
 			tunggus();
 			if(jumlahspin != 'unlimited'){
-				$('#tungguspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
+				$('#tungguspin').html('STOP');
 				$('#stopspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
 			}else{
 				$('#tungguspin').html('STOP <sup><span style="font-size:16px;color:lightblue;position:absolute;right:-13px;top:0;">&#8734;</span></sup>');
@@ -194,7 +194,7 @@ $(function(){
 			$('#startspin').click();
 			spincount--;
 			if(jumlahspin != 'unlimited'){
-				$('#tungguspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
+				$('#tungguspin').html('STOP');
 				$('#stopspin').html('STOP <sup><span style="font-size:11px;color:lightblue;position:absolute;right:-13px;top:0;">'+(Number(spincount)-1)+'</span></sup>');
 			}else{
 				$('#tungguspin').html('STOP <sup><span style="font-size:16px;color:lightblue;position:absolute;right:-13px;top:0;">&#8734;</span></sup>');
@@ -731,8 +731,6 @@ $(function(){
         clearTimeout(stop1);
         clearTimeout(stop2);
         $('.value div').removeClass('spingo');
-        $('.disablebtn').removeAttr('disabled');
-        $('.changebet').removeAttr('disabled');
 
         
         setTimeout(function() {
@@ -776,6 +774,8 @@ $(function(){
 						starts();
 						$('.jakpot').text('');
 						$('.popupbox').fadeOut();
+				        $('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 7000);
 				}else if((betkaliitem/bet) >=18 && (betkaliitem/bet) <=35){
 					// megawin
@@ -801,6 +801,8 @@ $(function(){
 						starts();
 						$('.jakpot').text('');
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 7000);
 				}else if((betkaliitem/bet) >=36){
 					// superwin
@@ -826,6 +828,8 @@ $(function(){
 						starts();
 						$('.jakpot').text('');
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 7000);
 				}else{
 					animaterotate($('.hasil1 img, .hasil2 img, .hasil3 img'));
@@ -839,6 +843,8 @@ $(function(){
 					// }
 					setTimeout(function() {
 						starts();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 2000);
 				}
 			// }, 2500);
@@ -879,6 +885,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else if((betkaliitem/bet) >=18 && (betkaliitem/bet) <=35){
 					// megawin
@@ -902,6 +910,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else if((betkaliitem/bet) >=36){
 					// superwin
@@ -925,6 +935,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else{
 					animaterotate($('.hasil1 img, .hasil2 img'));
@@ -938,6 +950,8 @@ $(function(){
 					// }
 					setTimeout(function() {
 						starts();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 2000);
 				}
 			// }, 2500);
@@ -978,6 +992,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else if((betkaliitem/bet) >=18 && (betkaliitem/bet) <=35){
 					// megawin
@@ -1001,6 +1017,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else if((betkaliitem/bet) >=36){
 					// superwin
@@ -1024,6 +1042,8 @@ $(function(){
 					setTimeout(function() {
 						starts();
 						$('.popupbox').fadeOut();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 5000);
 				}else{
 					animaterotate($('.hasil2 img, .hasil3 img'));
@@ -1037,6 +1057,8 @@ $(function(){
 					// }
 					setTimeout(function() {
 						starts();
+						$('.disablebtn').removeAttr('disabled');
+				        $('.changebet').removeAttr('disabled');
 					}, 2000);
 				}
 			// }, 2500);
@@ -1062,7 +1084,9 @@ $(function(){
 						tunggus();
 						setTimeout(function() {
 							starts();
-						}, 100);
+							$('.disablebtn').removeAttr('disabled');
+				        	$('.changebet').removeAttr('disabled');
+						}, 900);
 					}
 				}
 			// }, 2500);
