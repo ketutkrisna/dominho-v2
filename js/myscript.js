@@ -875,6 +875,7 @@ $(function(){
 						$('.popupbox').fadeIn();
 						$('.jakpot').text('JAKPOT');
 						$('.oktext').text('BIG');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -910,6 +911,7 @@ $(function(){
 						$('.popupbox').fadeIn();
 						$('.jakpot').text('JAKPOT');
 						$('.oktext').text('MEGA');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -945,6 +947,7 @@ $(function(){
 						$('.popupbox').fadeIn();
 						$('.jakpot').text('JAKPOT');
 						$('.oktext').text('SUPER');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1013,6 +1016,7 @@ $(function(){
 						$('#bigwin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('BIG');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1048,6 +1052,7 @@ $(function(){
 						$('#megawin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('MEGA');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1083,6 +1088,7 @@ $(function(){
 						$('#superwin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('SUPER');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1153,6 +1159,7 @@ $(function(){
 						$('#bigwin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('BIG');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1188,6 +1195,7 @@ $(function(){
 						$('#megawin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('MEGA');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
@@ -1223,6 +1231,7 @@ $(function(){
 						$('#superwin')[0].play();
 						$('.popupbox').fadeIn();
 						$('.oktext').text('SUPER');
+						$('.values').text('000');
 						setTimeout(function() {
 							counterwin(betkaliitem);
 						}, 200);
